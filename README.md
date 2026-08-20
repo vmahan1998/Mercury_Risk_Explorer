@@ -81,7 +81,7 @@ The visualizations should not be interpreted as direct observations or definitiv
 
 When referring to the application or this source package, please cite the associated dissertation and the Zenodo record containing this README and source materials:
 
-> Mahan, V. *Mercury Risk Explorer: An interactive Shiny application for exploring mercury-associated risk in the Penobscot River Estuary.* University of Maine. Zenodo. DOI: **to be added**.
+> Mahan, V. *Mercury Risk Explorer: An interactive Shiny application for exploring mercury-associated risk in the Penobscot River Estuary.* University of Maine. Zenodo. DOI: https://doi.org/10.5281/zenodo.22031191).
 
 Please replace the placeholder citation and DOI after the Zenodo record is published. The application itself is available at the public URL listed above.
 
