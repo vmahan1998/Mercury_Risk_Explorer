@@ -1,0 +1,820 @@
+/* NAVBAR BACKGROUND */
+.navbar {
+  background-color: #0f1f2d !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* NAVBAR BRAND (TITLE + LOGO) */
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+/* TAB TEXT */
+.navbar-nav .nav-link {
+  font-size: 1.5rem;   /* try 1.1–1.25rem */
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* HOVER STATE */
+.navbar-nav .nav-link:hover {
+  color: #7ecce6 !important;
+}
+
+/* ACTIVE TAB */
+.navbar-nav .nav-link.active {
+  color: #7ecce6 !important;
+  border-bottom: 2px solid #7ecce6;
+  background-color: transparent !important;
+  font-size: 1.4rem;
+}
+
+/* REMOVE BOOTSTRAP PILL STYLING */
+.nav-tabs .nav-link {
+  border: none !important;
+}
+
+/* Page spacing */
+.main-container, .container-fluid {
+  padding-top: 18px;
+}
+
+/* HERO */
+.hero-card {
+  background: linear-gradient(180deg, rgba(15,31,45,0.9) 0%, rgba(15,31,45,0.6) 100%) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  border-radius: 18px !important;
+  margin-bottom: 18px;
+}
+
+/* IMAGE-BACKED HEADER */
+.hero-header {
+  background-image:
+    linear-gradient(
+      rgba(15, 31, 45, 0.65),
+      rgba(15, 31, 45, 0.65)
+    ),
+    url("Penobscot_Estuary.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 40px 32px;
+  margin-bottom: 18px;
+  border-radius: 18px;
+}
+
+/* Title text on image */
+.hero-title-overlay {
+  color: #ffffff;
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .hero-header {
+    padding: 28px 20px;
+  }
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  max-width: 58rem;
+}
+
+.hero-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-image {
+  width: 75%;
+  height: auto;
+  max-width: none;      /* removes the 320px cap */
+  display: block;
+  border-radius: 20px;
+  opacity: 0.95;
+}
+
+.hero-figure {
+  margin: 0;
+  text-align: center;
+}
+
+.hero-figure-caption {
+  margin-top: 8px;
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.75);
+  font-style: italic;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+
+/* TILES */
+.tile-white {
+  background: rgba(240, 240, 240, 0.82) !important; /* translucent light tile */
+  color: #0f1f2d !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(15, 31, 45, 0.12) !important;
+  margin-bottom: 16px;
+  backdrop-filter: blur(4px);
+}
+
+.tile-blue {
+  background: rgba(79, 179, 217, 0.22) !important; /* translucent blue */
+  color: #e6f4fa !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(79, 179, 217, 0.35) !important;
+  margin-bottom: 16px;
+  backdrop-filter: blur(4px);
+}
+
+.tile-title {
+  font-weight: 650;
+  margin-bottom: 12px;
+}
+
+.tile-list li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.15rem;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tile-list li i {
+  color: #4fb3d9;       /* your light blue accent */
+  margin-top: 3px;
+  min-width: 18px;
+}
+
+/* Side image */
+.side-image-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  /* ⟵ key change */
+  padding-top: 24px;           /* ⟵ pushes image down */
+}
+
+.side-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 14px;
+  border: none;              /* ← removes outline */
+  box-shadow: none;          /* ← safety */
+}
+
+/* Citation box */
+.citation-box {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(15,31,45,0.25);
+}
+
+/* Links row */
+.links-row-title {
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.link-tile {
+  border-radius: 16px !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  background: rgba(15,31,45,0.65) !important;
+  color: lightgrey !important;
+}
+
+.link-title {
+  font-weight: 650;
+  margin-bottom: 6px;
+}
+
+.link-btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: rgba(79,179,217,0.25);
+  color: lightgrey !important;
+  border: 1px solid rgba(79,179,217,0.35);
+}
+
+.link-btn:hover {
+  background: rgba(79,179,217,0.35);
+}
+
+/* Plain home sections (no card styling) */
+.home-section {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  max-width: 900px;
+}
+
+.home-section p,
+.home-section ul {
+  margin-bottom: 0.9rem;
+}
+
+/* Centered sections */
+.statement-of-use {
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.statement-of-use,
+.citation-section {
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Italicize statement of use text only */
+.statement-text p {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.12;
+  margin-bottom: 0.55rem;
+}
+
+/* Citation formatting */
+.citation-text {
+  line-height: 1.15;
+  margin-bottom: 0.55rem;
+}
+
+/* Lead-in sentence */
+.citation-lead {
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+/* Main citation block */
+.citation-block {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.15;
+}
+
+/* Follow-up instruction */
+.citation-followup {
+  margin-top: 1.25rem;
+  text-align: left;
+}
+
+/* Optional: tighten spacing for citation blocks */
+.citation-section p {
+  line-height: 1.15;
+  margin-bottom: 0.55rem;
+}
+
+/* --- Related link tiles: motion + glow + accent bar --- */
+.link-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px !important;
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.22);
+  transform: translateY(0);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  min-height: 210px; /* keeps all tiles aligned */
+}
+
+/* animated accent strip at top */
+.link-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(126,204,230,0), rgba(126,204,230,0.9), rgba(126,204,230,0));
+  transform: translateX(-60%);
+  opacity: 0.65;
+  transition: transform 450ms ease, opacity 250ms ease;
+}
+
+/* subtle moving highlight */
+.link-tile::after {
+  content: "";
+  position: absolute;
+  inset: -40% -30% auto -30%;
+  height: 140%;
+  background: radial-gradient(circle at 30% 30%, rgba(126,204,230,0.18), transparent 55%);
+  opacity: 0;
+  transition: opacity 250ms ease;
+  pointer-events: none;
+}
+
+.link-tile:hover {
+  transform: translateY(-6px);
+  border-color: rgba(126,204,230,0.35) !important;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.32);
+}
+
+.link-tile:hover::before {
+  transform: translateX(60%);
+  opacity: 1;
+}
+
+.link-tile:hover::after {
+  opacity: 1;
+}
+
+/* header row inside tile */
+.link-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: rgba(126,204,230,0.16);
+  border: 1px solid rgba(126,204,230,0.28);
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.link-tile:hover .link-icon {
+  transform: translateY(-1px) scale(1.03);
+  background: rgba(126,204,230,0.22);
+  border-color: rgba(126,204,230,0.40);
+}
+
+.link-title {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.link-desc {
+  opacity: 0.88;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+/* button interaction */
+.link-btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(126,204,230,0.16);
+  border: 1px solid rgba(126,204,230,0.30);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.link-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(126,204,230,0.24);
+  border-color: rgba(126,204,230,0.42);
+  color: #ffffff;
+}
+
+/* make whole tile clickable, but keep button usable */
+.stretched-link {
+  position: static;
+}
+.link-tile .stretched-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.link-btn {
+  position: relative;
+  z-index: 2;
+}
+
+/* respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  .link-tile, .link-tile::before, .link-tile::after, .link-icon, .link-btn {
+    transition: none !important;
+  }
+}
+
+/* wrapper establishes positioning context */
+.hydro-map-wrap {
+  position: relative;
+  width: 100%;
+}
+
+/* Main overlay container */
+.hydro-overlay-left {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 800;
+
+  width: 360px;
+  max-height: calc(650px - 36px);
+  overflow-y: auto;
+
+  padding: 14px 14px;
+  border-radius: 18px;
+
+  /* NEW: white tile */
+  background: rgba(255, 255, 255, 0.97);
+
+  border: 1px solid rgba(15, 31, 45, 0.12);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.28);
+}
+
+/* Text color inside overlay */
+.hydro-overlay-left,
+.hydro-overlay-left h1,
+.hydro-overlay-left h2,
+.hydro-overlay-left h3,
+.hydro-overlay-left h4,
+.hydro-overlay-left p,
+.hydro-overlay-left label {
+  color: rgba(15, 31, 45, 0.92);
+}
+
+/* give each overlay chunk a little separation */
+.hydro-overlay-left .overlay-section + .overlay-section {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(15, 31, 45, 0.12);
+}
+
+/* tighten form spacing */
+.hydro-overlay-left .form-group {
+  margin-bottom: 8px;
+}
+
+/* Optional: make radio / checkbox labels slightly softer */
+.hydro-overlay-left .form-check-label {
+  color: rgba(15, 31, 45, 0.85);
+}
+
+/* Round the map and add subtle border */
+#hydro_map {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+/* Overlay controls on the map */
+.map-controls {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 320px;
+  padding: 14px 14px 10px 14px;
+  border-radius: 16px;
+  background: rgba(15,31,45,0.78);
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+  z-index: 999;
+}
+
+.map-controls-title {
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* Make Shiny inputs look good on dark overlay */
+.map-controls .form-control,
+.map-controls .selectize-input {
+  background: rgba(255,255,255,0.06) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+}
+
+.map-controls label {
+  color: rgba(255,255,255,0.9);
+  font-weight: 600;
+}
+
+/* Slider text */
+.map-controls .irs--shiny .irs-single,
+.map-controls .irs--shiny .irs-min,
+.map-controls .irs--shiny .irs-max {
+  color: #ffffff !important;
+}
+
+.hydro-after-map-space {
+  height: 18px;
+}
+
+/* Make only selected sections full width */
+.home-section-wide {
+  max-width: none !important;
+  width: 1600px !important;
+  height: 600px !important;
+}
+
+/* Make only selected sections full width */
+.home-section-right {
+  max-width: none !important;
+  width: 1600px !important;
+  height: 300px !important;
+}
+
+/* Extra spacing between stacked plots */
+.plot-stack-space {
+  height: 26px;
+}
+
+/* Right-side interpretation tile styling */
+.hydro-interpret-tile {
+  margin-top: 48px;        /* moves panel down slightly */
+  padding: 14px 16px;
+  min-height: 640px;      /* makes panel visually taller */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollable body */
+.hydro-interpret-body {
+  max-height: 650px;      /* prevents skyscraper */
+  overflow-y: auto;
+  padding-right: 6px;
+  line-height: 1.25;
+  flex-grow: 1;
+}
+
+/* Optional: soften scrollbar */
+.hydro-interpret-body::-webkit-scrollbar {
+  width: 10px;
+}
+.hydro-interpret-body::-webkit-scrollbar-thumb {
+  background: rgba(15,31,45,0.25);
+  border-radius: 10px;
+}
+
+
+.field-site-title{
+  font-size: 2.1rem;   /* try 1.9–2.3rem */
+  font-weight: 750;
+  letter-spacing: 0.2px;
+}
+
+.side-image-large {
+  width: 100%;
+  max-width: 620px;     /* try 580–700px depending on taste */
+}
+
+.section-space {
+  height: 48px;  /* or 56px if you want more breathing room */
+}
+
+.section-space-small {
+  height: 24px;  /* or 56px if you want more breathing room */
+}
+
+/* Make plotly charts transparent and remove any boxed background */
+.pie-card .plotly,
+.pie-card .svg-container {
+  background: transparent !important;
+}
+
+.pie-card {
+  background: transparent !important;
+}
+
+/* Pie chart tiles – match tile-white styling */
+.pie-pop {
+  background: rgba(240, 240, 240, 0.62) !important;
+  color: #0f1f2d !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(15, 31, 45, 0.12) !important;
+  backdrop-filter: blur(4px);
+  padding: 16px 16px 12px 16px;
+  margin-bottom: 16px;
+
+  /* subtle elevation */
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.pie-pop:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.18);
+}
+
+/* spacing between site label and pie */
+.pie-site-label {
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+/* keep plotly SVG transparent so tile shows through */
+.pie-pop .plotly,
+.pie-pop .svg-container {
+  background: transparent !important;
+}
+
+.home-section-transparent{
+  width: 100%;
+  background: transparent;
+  padding: 18px 0;
+}
+
+.home-section-transparent .tile-title,
+.home-section-transparent .helper-text,
+.home-section-transparent .hero-figure-caption,
+.home-section-transparent label{
+  color: #D0D0D0 !important;
+}
+
+/* Emphasized tile variant */
+.tile-pop {
+  box-shadow: 
+    0 8px 22px rgba(15, 31, 45, 0.18),
+    0 2px 6px rgba(15, 31, 45, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Optional hover effect */
+.tile-pop:hover {
+  box-shadow:
+    0 12px 28px rgba(15, 31, 45, 0.22),
+    0 4px 10px rgba(15, 31, 45, 0.12);
+  transform: translateY(-4px);
+}
+
+.tile-pop .tile-title {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.tile-pop .tile-title {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Equation container */
+.shear-framework {
+  margin: 12px 0 18px 0;
+}
+
+/* Center equation, force black */
+.equation-block {
+  text-align: center;
+  font-size: 1.15em;
+}
+
+/* Left-align definitions, force black */
+.equation-definitions {
+  text-align: left;
+  max-width: 620px;
+  margin: 10px auto 0 auto;   /* centers block but keeps text left */
+  font-size: 0.92em;
+  line-height: 1.35;
+}
+
+.how-to-text{
+  text-align: left;
+}
+
+/* Glossary Button (vertical tab sticking out from the right) */
+.glossary-btn {
+  position: fixed;
+  top: 50%;
+  right: -40px; /* Slightly off-screen */
+  transform: translateY(-50%) rotate(270deg); /* Rotate tab 90 degrees counterclockwise */
+  background-color: white;
+  color: #0f1f2d;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  z-index: 9999;
+  cursor: pointer;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  white-space: nowrap; /* To ensure the text doesn’t wrap */
+}
+
+/* Glossary Panel (slides in from the right) */
+.glossary-tab {
+  position: fixed;
+  top: 0;
+  right: -320px; /* Initially off-screen to the right */
+  width: 320px;
+  height: 100%;
+  background-color: #f8f9fa;
+  box-shadow: -3px 0px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 9998;
+  overflow-y: auto;
+  transition: right 0.3s ease-in-out;
+}
+
+/* When 'open' class is added, the tab slides in */
+.glossary-tab.open {
+  right: 0; /* Slide in */
+}
+
+/* Force all text inside glossary to dark blue */
+.glossary-tab {
+  color: #0f1f2d;
+}
+
+/* Headings */
+.glossary-tab h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #0f1f2d;
+}
+
+/* Paragraph text */
+.glossary-tab p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #0f1f2d;
+}
+
+/* Definition list styling */
+.glossary-tab dl {
+  font-size: 13px;
+  color: #0f1f2d;
+}
+
+.glossary-tab dt {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #0f1f2d;
+}
+
+.glossary-tab dd {
+  margin-left: 0;
+  margin-bottom: 6px;
+  color: #0f1f2d;
+}
+
+.reference-list {
+  margin-left: 18px;
+}
+
+.reference-list li {
+  margin-bottom: 10px;
+  line-height: 1.45;
+}
+
+.pseudo-legend{
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.legend-item{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.legend-swatch{
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* Match these to your lifestage_colors */
+.legend-adult{ background: #E74C3C; }      /* replace with your adult color */
+.legend-egg{ background: #F4D03F; }        /* replace with your egg/larvae color */
+.legend-juvenile{ background: #A3D977; }   /* replace with your juvenile color */
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #f0f0f0; border-radius: 20px; padding: 6px 14px; font-size: 14px;
+}
+.read-more summary { cursor: pointer; font-weight: 600; margin-top: 8px; }
+.how-to-item p { margin-top: 4px; }

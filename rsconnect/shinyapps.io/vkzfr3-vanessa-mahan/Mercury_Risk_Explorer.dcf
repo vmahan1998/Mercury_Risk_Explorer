@@ -1,0 +1,12 @@
+name: Mercury_Risk_Explorer
+title: Mercury_Risk_Explorer
+username: vkzfr3-vanessa-mahan
+account: vkzfr3-vanessa-mahan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 16957180
+bundleId: 12167431
+url: https://vkzfr3-vanessa-mahan.shinyapps.io/Mercury_Risk_Explorer/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

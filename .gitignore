@@ -1,0 +1,24 @@
+# Local runtime and research data
+/data/
+*.csv
+*.rds
+*.RData
+*.tif
+*.shp
+*.zip
+*.mat
+
+# Large raw images (originals before compression)
+www/IMG_*.JPG
+www/PXL_*.jpg
+www/1000016*.jpg
+
+# R environment
+.Rproj.user/
+.Rhistory
+.RData
+.Renviron
+
+# renv
+renv/library/
+renv/staging/
